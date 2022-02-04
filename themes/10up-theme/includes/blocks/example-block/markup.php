@@ -26,7 +26,8 @@ $args = wp_parse_args(
 
 ?>
 <div class="<?php echo esc_attr( $args['class_name'] ); ?>">
-	<h2 class="wp-block-example-block__title">
+<p>Test</p>
+<h2 class="wp-block-example-block__title">
 		<?php echo wp_kses_post( $args['attributes']['customTitle'] ); ?>
 	</h2>
 </div>

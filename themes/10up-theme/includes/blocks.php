@@ -8,6 +8,7 @@
 namespace TenUpTheme\Blocks;
 
 use TenUpTheme\Blocks\Example;
+use TenUpTheme\Blocks\AuthorByline;
 
 
 /**
@@ -52,9 +53,11 @@ function register_theme_blocks() {
 
 	// Require custom blocks.
 	require_once TENUP_THEME_BLOCK_DIR . '/example-block/register.php';
+	require_once TENUP_THEME_BLOCK_DIR . '/author-byline/register.php';
 
 	// Call block register functions for each block.
 	Example\register();
+	AuthorByline\register();
 
 	// Remove the filter after we register the blocks
 	remove_filter( 'plugins_url', __NAMESPACE__ . '\filter_plugins_url', 10, 2 );

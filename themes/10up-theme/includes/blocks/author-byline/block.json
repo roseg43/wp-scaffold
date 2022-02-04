@@ -1,0 +1,37 @@
+{
+	"title": "Author Byline",
+	"description": "Shows the author of the current post next to their avatar image",
+	"text-domain": "tenup-scaffold",
+	"name": "tenup/author-byline",
+  "icon": "feedback",
+  "category": "tenup-scaffold-blocks",
+	"attributes":{
+		"showAvatar": {
+      "type": "boolean",
+      "default": true
+    },
+    "avatarBorderColor": {
+      "type": "string",
+      "default": "#FFCAB1"
+    }
+  },
+  "example": {
+    "attributes":{
+      "showAvatar": true,
+      "avatarBorderColor": "is-border-style-apricot"
+    }
+  },
+  "supports": {
+		"inserter": true,
+		"multiple": false,
+		"reusable": false,
+		"spacing": {
+			"padding": false
+		},
+		"typography": {
+			"fontSize": false,
+			"lineHeight": false
+		}
+	},
+	"editorScript": "file:../../../dist/blocks/author-byline/editor.js"
+}

@@ -1,0 +1,44 @@
+/**
+ * Example block styles
+ */
+:root {
+	--color-apricot: #ffcab1;
+	--color-cadet-blue: #69a2b0;
+	--color-russian-green: 659157;
+	--color-olivine: #a1c084;
+	--color-paradise-pink: #e05263;
+}
+
+.wp-block-tenup-author-byline {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 30px;
+
+	& .wp-block-tenup-author-byline__gravatar {
+
+		& > img {
+			border-width: 8px;
+		}
+
+		&.is-border-style-apricot > img {
+			border-color: var(--color-apricot);
+		}
+
+		&.is-border-style-cadet-blue > img {
+			border-color: var(--color-cadet-blue);
+		}
+
+		&.is-border-style-russian-green > img {
+			border-color: var(--color-russian-green);
+		}
+
+		&.is-border-style-olivine > img {
+			border-color: var(--color-olivine);
+		}
+
+		&.is-border-style-paradise-pink > img {
+			border-color: var(--color-paradise-pink);
+		}
+
+	}
+}
